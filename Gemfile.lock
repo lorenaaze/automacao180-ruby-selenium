@@ -63,6 +63,8 @@ GEM
       cucumber-messages (~> 13.0, >= 13.0.1)
     diff-lcs (1.6.1)
     drb (2.2.1)
+    faker (3.5.1)
+      i18n (>= 1.8.11, < 2)
     ffi (1.17.2-x64-mingw-ucrt)
     i18n (1.14.7)
       concurrent-ruby (~> 1.0)
@@ -125,6 +127,7 @@ PLATFORMS
 DEPENDENCIES
   capybara (= 3.33)
   cucumber (= 5.2)
+  faker (= 3.5.1)
   rspec (= 3.13)
   selenium-webdriver (= 4.8.4)
   webdrivers
