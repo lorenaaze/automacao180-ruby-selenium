@@ -3,8 +3,9 @@ Dado('que acesso a página de cadastro') do
 end
   
 Quando('submeto o meu cadastro completo') do
+  MongoDB.new.remove_user("fernando@gmail.com")
   find("#fullName").set "Fernando Papito"
-  find("#email").set Faker::Internet.email
+  find("#email").set "fernando@gmail.com"
   find("#password").set "pwd123"
   click_button "Cadastrar"
 end
